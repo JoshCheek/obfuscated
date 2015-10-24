@@ -1,20 +1,20 @@
-                                              _  \
-                                                   ,              __  ,  # (C) Josh Cheek
-                                                     *,_       =               # 2015
-def                                                __   ___ ,                      #
-                                                 *__,  **_                           # Inspiration
-putc                                           ___                                    # Is
-end, def                                         _     *_,                             # Obviously
-                                                   **__                                # Yusuke
-                                                    _.                                 # Endoh
-map                                               {|_  ;__                            #
-                                                 |__      _                          # And
-                                                 .___       }                      # Ruby
-end                                              ,         (                     # <3
-public def                                         ___  *_,              #   #
-                                                    **__
-size                                                   *_
-end                                                      ),
+                                             _  \
+                                                  ,              __  ,  # (C) Josh Cheek
+                                                    *,_       =               # 2015
+def                                               __   ___ ,                      #
+                                                *__,  **_                           # Inspiration
+putc                                          ___                                    # Is
+end, def                                        _     *_,                             # Obviously
+                                                  **__                                # Yusuke
+                                                   _.                                 # Endoh
+map                                              {|_  ;__                            #
+                                                |__      _                          # And
+                                                .___       }                      # Ruby
+end                                             ,         (                     # <3
+public def                                        ___  *_,                   #
+                                                   **__
+size                                                  *_
+end                                                     ),
                                                      _ ([
                  [],[],[],[                       ],[],[],[
              ],[],[],[],[],[],[              ],[],[],[],[],[],[
