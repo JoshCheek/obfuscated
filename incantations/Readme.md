@@ -61,9 +61,44 @@ $ ruby -e 'public(def [](o) $><<%.#$_..<<($.+=o)&&self end)[72][29][7][0][3][~66
 Hello, Ruby
 ```
 
-Same as above, but uses a y combinator (though sgrif will point out that it's actually a [Z combinator](https://en.wikipedia.org/wiki/Fixed-point_combinator#Strict_fixed_point_combinator))
+Same as the first one, but uses a y combinator (though sgrif will point out that it's actually a [Z combinator](https://en.wikipedia.org/wiki/Fixed-point_combinator#Strict_fixed_point_combinator))
 
 ```
 $ ruby -e '->y{->o{$>.putc($.+=o)&&y[y]}}[->y{->o{$>.putc($.+=o)&&y[y]}}][72][29][7][0][3][~66][~11][50][35][~18][23][-111]'
 Hello, Ruby
+```
+
+Same as above, but doesn't store the previous value in global state.
+
+```
+ruby -e '->y{->p{->c{y[y][putc p+c]}}}[->y{->p{->c{y[y][putc p+c]}}}][0][72][29][7][0][3][~66][~11][50][35][~18][23][-111]'
+Hello, Ruby
+```
+
+-----
+
+```
+seq 127 | ruby -vn                                                                                          \
+-e '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~$~' \
+-e '$>.<<($..chr).  ~&&~  $1&&$><<$/.  ~||~  $2&&$><<$/.  ~if~  /79|(68)|58|(111)|95/&&$/.  ~..~  !(O_o).!' \
+-e 'BEGIN { alias    ~     itself                                                                        }' \
+-e 'BEGIN {         ~O_o=             ~ !! ~              ~ ! ~                              ~$~         }' \
+-e '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~$~'
+```
+
+-----
+
+
+```ruby
+( C =-> c{ $><< c.chr; C} ).
+( ~1<<-~-~-~-~1^~-~-~1    ).
+( -~2<<2<<2|-~2           ).
+( -~3<<3                  ).
+( -~4<<4|~-~-4            ).
+( 5*5*5|-~5^5+5           ).
+( 6<<~-~-6|-6&6           ).
+( 7*7|7*7+7|7*7+7<<-~7[7] ).
+( -~-~8                   )
+
+# >> <3 Ruby
 ```
