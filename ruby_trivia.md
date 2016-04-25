@@ -41,3 +41,4 @@ Candidates I'm submitting to [sferik](https://twitter.com/sferik)'s Ruby Trivia
 * `A B`, syntactically, `A` is a method, `B` is a constant
 * What will this code do? `class BasicObject; Object; end`
 * What does this code evaluate to? `Class.singleton_class.superclass.superclass.superclass.superclass`
+* What happens if you save an instance variable without a leading `@`?
