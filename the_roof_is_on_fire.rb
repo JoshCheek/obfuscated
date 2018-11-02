@@ -21,7 +21,7 @@ end
 end rescue begin
 
 # just to be cruel:
-$><<%!#$!!*-~-~$.<<!!%!
+$><<%!#$!!*-~-~-~$.<<!!%!
 
 is
 on
@@ -29,8 +29,3 @@ fire!
 
 # fin!
 puts end
-
-# >>
-# >>  the roof
-# >>  the roof
-# >>  the roof  is on fire
