@@ -9,10 +9,9 @@ class Symbol
   <<* w,t:?f
   yield end.
   << do raise +$/+
-
-  ! <<-"the roof."
+  ! <<-"the roof!"
         the roof
-        the roof.
+        the roof!
 end
 
 # just to be cool:
