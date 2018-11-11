@@ -1,10 +1,11 @@
-# you may need to `gem install parser`
-require 'parser/ruby25'
+require 'ripper'
 
-body  = File.read(ARGV.fetch 0).chomp
+
+body  = File.read(ARGV.fetch 0).lines.last.chomp
 chars = body.chars.uniq.sort
+exprs = Ripper.sexp(body)[1]
 
 puts "length:         #{body.length}"
+puts "expressions:    #{exprs.size}"
 puts "alphabet_arity: #{chars.size}"
-puts "alphabet:       #{chars.join.inspect}"
-puts "expressions:    #{Parser::Ruby25.parse(body).children.size}"
+puts "alphabet:       #{chars.join}"
